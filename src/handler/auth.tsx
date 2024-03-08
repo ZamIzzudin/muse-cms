@@ -1,7 +1,31 @@
 import DB from '@util/db'
 
-function Login (){
+export default (()=>{
+    async function login(){
 
-}
+    }
 
-export {Login}
+    async function register(){
+
+    }
+
+    async function refresh(){
+
+    }
+
+    async function checkLogin(){
+
+    }
+
+    async function logout(){
+
+    }
+
+    return {
+        login,
+        register,
+        refresh,
+        checkLogin,
+        logout
+    }
+})()
