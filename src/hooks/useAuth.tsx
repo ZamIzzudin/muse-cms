@@ -1,29 +1,27 @@
-'use client'
+/** @format */
 
-import React from 'react';
+"use client";
+
+import React from "react";
 import { SessionProvider } from "next-auth/react";
-import { authConfig } from '@util/auth';
-import { getServerSession } from 'next-auth';
+import { authConfig } from "@util/auth";
+import { getServerSession } from "next-auth";
 
 // TYPE SETUP
 type childrenProps = {
-    children: React.ReactNode
-}
+  children: React.ReactNode;
+};
 
 // CONTEXT SETUP
 export const AuthProvider = ({ children }: childrenProps) => {
-    return (
-        <SessionProvider>
-            {children}
-        </SessionProvider>
-    )
+  return <SessionProvider>{children}</SessionProvider>;
 };
 
 // HOOKS
 export async function useAuth() {
-    const session = await getServerSession(authConfig);
-    if(!session){
-        return null
-    }
-    return session
+  const session = await getServerSession(authConfig);
+  if (!session) {
+    return null;
+  }
+  return session;
 }

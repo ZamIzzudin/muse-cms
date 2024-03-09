@@ -1,5 +1,10 @@
 /** @format */
 
+.layout {
+  background-image: url("../assets/bg.jpg");
+  background-size: cover;
+}
+
 .form_login {
   background-color: white;
   border-radius: 8px;
@@ -7,4 +12,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-width: 25vw;
+}
+
+.form_login form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.show_pass_btn {
+  padding: 10px 15px;
+  border-radius: 0 !important;
+  background-color: transparent;
+  color: var(--red);
+  border-bottom: 2px solid var(--red);
+}
+
+.form_login img {
+  margin-bottom: 50px;
 }

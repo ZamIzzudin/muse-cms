@@ -19,12 +19,12 @@
     ],
     "baseUrl": "./src",
     "paths": {
-      "@style/*":["styles/*"],
-      "@handler/*":["handlers/*"],
-      "@util/*":["utils/*"],
-      "@comp/*":["components/*"],
-      "@hook/*":["hooks/*"]
-
+      "@style/*": ["styles/*"],
+      "@handler/*": ["handlers/*"],
+      "@util/*": ["utils/*"],
+      "@comp/*": ["components/*"],
+      "@hook/*": ["hooks/*"],
+      "@asset/*": ["assets/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

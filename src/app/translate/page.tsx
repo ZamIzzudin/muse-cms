@@ -6,8 +6,10 @@ export default async function Translate() {
   await loginIsRequiredServer();
 
   return (
-    <section>
-      <h1>Translate Page</h1>
-    </section>
+    <main>
+      <section className="layout">
+        <h1>Translate Page</h1>
+      </section>
+    </main>
   );
 }

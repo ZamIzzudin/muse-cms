@@ -2,12 +2,11 @@
 
 import type { Metadata } from "next";
 import { AuthProvider } from "@hook/useAuth";
-import { getServerSession } from "next-auth";
-import { authConfig } from "@util/auth";
-
-import SideBar from "@comp/sidebar";
 
 import { Inter } from "next/font/google";
+import SideBar from "@comp/sidebar";
+import Layouting from "@comp/layouting";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@style/globals.css";
 
@@ -24,6 +23,8 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        {/* <Layouting /> */}
+        <SideBar />
         <AuthProvider>{children}</AuthProvider>
       </body>
     </html>

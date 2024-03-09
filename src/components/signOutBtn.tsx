@@ -3,6 +3,6 @@
 "use client";
 import { signOut } from "next-auth/react";
 
-export default function Button() {
+export default function SignOutBtn() {
   return <button onClick={() => signOut()}>Logout</button>;
 }
